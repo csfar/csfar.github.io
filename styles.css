@@ -2,173 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(240, 240, 240, 1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(244, 244, 244, 1);
+    font-family: Helvetica, sans-serif;
     color: rgba(33, 33, 33, 1);
 }
 
-body {
-    text-align: center;
-}
 
 .wrapper {
+    display: grid;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    text-align: justify;
+    line-height: 2;
+}
+
+.app-list-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr;
+    gap: 10px;
+    margin-bottom: 85px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.app-grid-info {
+    text-align: right;
+    margin-left: 45px;
+    margin-right: 45px;
+
+    font-style: normal;
+    font-size: 14px;
+}
+
+.app-grid-description {
+    text-align: left;
+    margin-left: 45px;
+    margin-right: 45px;
+
     line-height: 1.5;
+    font-style: normal;
+    font-size: 14px;
 }
 
-code {
-    font-family: monospace;
-    background:rgba(225, 225, 225, 1);
+.app-grid-description li {
+    margin-bottom: 8px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr;
+    gap: 10px;
+    margin-bottom: 85px;
+}
+
+.info-grid-flavor {
+    width: 40%;
+    text-align: right;
+    margin-left: 45px;
+    margin-right: auto;
+
+    font-style: normal;
+    font-size: 20px;
     font-weight: bold;
 }
 
-header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 0px;
-    text-align: center;
+.info-grid-description {
+    width: 40%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 45px;
+
+    font-size: 14px;
+    font-style: normal;
 }
 
-header a {
-    font-weight: bold;
-    font-size: 1.15em;
-    text-decoration: none;
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(33, 33, 33, 1);
+    margin-bottom: 85px;
 }
 
-header .site-name {
-    font-size: 2.5em;
-    color: rgba(33, 33, 33, 1);
+header {
+    text-align: right;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 44px;
+    padding-left: 44px;
+    font-style: normal;
     font-weight: 900;
-}
-
-footer {
-    margin-top: 10px;
-}
-
-nav {
-    margin-top: 20px;
-    align-content: center;
+    font-size: 18px;
 }
 
 nav li {
     display: inline-block;
-    margin-right: 15px;
     line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 2px;
 }
 
-nav li a.selected {
-    text-decoration: underline;
-}
-
-h1 {
-    margin-bottom: 5px;
-    margin-top: 20px;
-    font-size: 2em;
+nav li a {
     font-weight: bold;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    width: fit-content;
-}
-
-h3 {
-    margin-bottom: 10px;
-    font-size: 1.15em;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-a {
-    color: inherit;
-}
-
-.portfolio {
-    background-color: blueviolet;
-    height: 2em;
-    width: 20px;
-}
-
-.description {
-    margin-bottom: 40px;
-}
-
-.item-list > li {
-    display: block;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #eee;
-    margin-bottom: 20px;
-}
-
-.item-list > li:last-child {
-    margin-bottom: 0;
-}
-
-.item-list h1 {
-    margin-bottom: 15px;
-    font-size: 1.3em;
-}
-
-.item-list p {
-    margin-bottom: 0;
-}
-
-.tag-list {
-    margin-bottom: 15px;
-}
-
-.tag-list li,
-.tag {
-    display: inline-block;
-    background-color: #000;
-    color: #ddd;
-    padding: 4px 6px;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.tag-list a,
-.tag a {
     text-decoration: none;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
 }
-
-.item-page .tag-list {
-    display: inline-block;
-}
-
-.content {
-    margin-bottom: 40px;
-}
-
-.browse-all {
-    display: block;
-    margin-bottom: 30px;
-}
-
-.all-tags li {
-    font-size: 1.4em;
-    margin-right: 10px;
-    padding: 6px 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-    * {
-        background: rgba(33, 33, 33, 1);
-        color: rgba(240, 240, 240, 1);
-    }
-}
-
-@media(max-width: 600px) {
-    .wrapper {
-        padding: 10px 20px;
-    }
-}
-
