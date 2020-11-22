@@ -19,16 +19,16 @@
 .app-list-grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 2fr;
-    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 0px;
     margin-bottom: 85px;
 }
 
 .app-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
+    grid-template-rows: auto auto;
+    gap: 70px 5px;
 }
 
 .app-grid-info {
@@ -45,13 +45,28 @@
     margin-left: 45px;
     margin-right: 45px;
 
-    line-height: 1.5;
     font-style: normal;
     font-size: 14px;
+    border-width: 0px;
+    border-color: black;
+    border-style: solid;
+    transition: 0.1s linear;
 }
 
-.app-grid-description li {
-    margin-bottom: 8px;
+.app-title {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.1s linear;
+    background: linear-gradient(to left, rgba(33, 33, 33, 1) 50%, rgba(244, 244, 244, 1) 50%);
+    background-size: 200%;
+    background-position: 0 0;
+}
+
+.app-title:hover {
+    color: rgba(244, 244, 244, 1);
+    background-position: +100% 0;
 }
 
 .info-grid {
@@ -114,5 +129,15 @@ nav li a {
     text-align: right;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
+
+    transition: 0.1s linear;
+    background: linear-gradient(to left, rgba(33, 33, 33, 1) 50%, rgba(244, 244, 244, 1) 50%);
+    background-size: 200%;
+    background-position: 0 0;
+}
+
+nav li a:hover {
+    color: rgba(244, 244, 244, 1);
+    background-position: +100% 0;
 }
