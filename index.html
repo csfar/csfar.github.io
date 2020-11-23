@@ -6,77 +6,52 @@
     <title>csfar</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <h1 class="header-title">ARTUR CARNEIRO</h1>
-            <nav>
-                <ul>
-                    <li><a href="https://github.com/csfar" target="_blank">GitHub</a></li>
-                    <li><a href="https://twitter.com/csfar_" target="_blank">Twitter</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="separator"></div>
-        <div class="info-grid">
-            <div class="info-grid-flavor">
-                <p>I'm an iOS Developer who loves working
+        <div class="header">
+            <h1>ARTUR CARNEIRO</h1>
+            <div>
+                <a href="https://github.com/csfar" target="_blank">GitHub</a>
+                <a href="https://twitter.com/csfar_" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="first-row">
+                <p class="info-flavor">I'm an iOS Developer who loves working
                     on challenging and interesting projects.
                 </p>
-            </div>
-            <div class="info-grid-description">
-                <p>
+                <p class="info-extra">
                     I've built apps using <b>UIKit</b> and <b>SwiftUI</b>.
                     Pulled data from APIs using <b>URLSession</b> and made sure
                     to keep it saved with <b>Core Data</b>. Worked on apps using
                     <b>MVVM</b> with <b>Coordinators</b> and <b>MVC</b> with
-                    UIViewController containment. All of this while writing 
+                    UIViewController containment. All of this while writing
                     as many tests as possible using <b>XCTest</b>.
-                </p>
+            </div class="row">
+            <div class="row">
+                <img src="screenshot.png">
+                <div class="project-info">
+                    <p><span class="project-title">FORMWORKS</span></p>
+                    <p class="project-subtitle">
+                        A framework inspired by server-driven UI aimed at making it easy to build
+                        forms from JSON.
+                    </p>
+                    <br>
+                    <p>Helped implement a <span class="keyword">MVVM</span>-like architecture for the form and its
+                            components.</p>
+                            <br>
+                        <p>Built the form's initialization process, from receiving the JSON data
+                            to generating each component and displaying them.</p>
+                            <br>
+                        <p>Implemented tests using <span class="keyword">XCTest</span> and made sure to keep code documented.</p>
+                        <br>
+                    <a href="https://github.com/myformworks/Formworks" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div>
-        <div class="separator"></div>
-        <div class="apps-list-grid">
-            <div class="app-grid">
-                <div class="app-grid-info">
-                    <a class="app-title" href="https://github.com/myformworks/Formworks" target="_blank">Formworks</a>
-                    <p>A framework inspired by server-driven UI aimed at making it easy to build forms from JSON.</p>
-                </div>
-                <div class="app-grid-description">
-                    <p>Helped implement a MVVM-like architecture for the form and its
-                        components.</p>
-                        <br>
-                    <p>Built the form's initialization process, from receiving the JSON data
-                        to generating each component and displaying it.</p>
-                        <br>
-                    <p>Implemented tests using XCTest and made sure to keep code documented.</p>
-                        <br>
-                </div>
-            </div>
-            <div class="app-grid">
-                    <div class="app-grid-info">
-                        <a class="app-title" href="https://github.com/csfar/vacation-challenge" target="_blank">Memora</a>
-                        <p>An iOS app for recording, collecting and remembering audio memories.</p>
-                    </div>
-                    <div class="app-grid-description">
-                        <p>Solo-developed iOS app following a MVVM-like architecture with some UIViewController
-                            containment.</p>
-                            <br>
-                        <p>Made use of Core Data for data persistence and NSFetchedResultsController
-                            to display memories saved by the user.
-                        </p>
-                            <br>
-                        <p>Views built using only code with animations done using Core Animation.</p>
-                            <br>
-                        <p>Memories recorded and played using AVFoundation.</p>
-                            <br>
-                        <p>Implemented logging through OSLog.</p>
-                            <br>
-                    </div>
-                </div>
         </div>
     </div>
 </body>
