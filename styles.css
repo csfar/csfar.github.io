@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    background: rgba(244, 244, 244, 1);
-    font-family: 'Noto Sans JP', Helvetica, sans-serif;
+    background: white;
+    font-family: 'Arvo', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
 
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
@@ -23,6 +23,7 @@
     text-align: right;
     padding: 20px;
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .header h1 {
@@ -33,11 +34,13 @@
     font-size: 14pt;
     font-weight: bold;
     text-decoration: none;
-    color: rgba(244, 244, 244, 1);
-    padding: 5px;
+    font-family: 'Amiko', Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 5px;
 
     transition: 0.1s linear;
-    background: linear-gradient(to left, rgba(244, 244, 244, 1) 50%,  black 50%);
+    background: linear-gradient(to left, white 50%,  black 50%);
     background-size: 200%;
     background-position: 0 0;
 }
@@ -66,7 +69,8 @@
 
 .first-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
+    grid-gap: 20px;
     border-width: 0px;
     border-top-width: 2px;
     border-style: solid;
@@ -79,15 +83,14 @@
     font-style: normal;
     font-size: 18pt;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
+    font-family: 'Arvo', serif;
 }
 
 .info-extra {
     font-style: normal;
     font-size: 12pt;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 7px;
 }
 
 img {
@@ -95,10 +98,14 @@ img {
     width: 100%;
     padding: 30px;
     margin-right: 20px;
-    background-color: white;
+    background-color: #E3E3E3;
 
     transition: 0.1s linear;
     filter: grayscale(1)
+}
+
+.image {
+    padding: 20px;
 }
 
 img:hover {
@@ -116,8 +123,9 @@ img:hover {
     font-style: normal;
     font-size: 20pt;
     font-weight: bold;
+    font-family: 'Amiko', Helvetica, sans-serif;
 
-    background: linear-gradient(to top, #E3E3E3 50%, rgba(244, 244, 244, 1) 50%);
+    background: linear-gradient(to top, #E3E3E3 50%, white 50%);
 }
 
 .project-subtitle {
@@ -134,13 +142,15 @@ a {
     font-size: 12pt;
     font-weight: bold;
     text-decoration: none;
-    color: rgba(244, 244, 244, 1);
+    color: white;
     padding: 5px;
 
     transition: 0.1s linear;
-    background: linear-gradient(to left, rgba(244, 244, 244, 1) 50%,  black 50%);
+    background: linear-gradient(to left, white 50%,  black 50%);
     background-size: 200%;
     background-position: 0 0;
+
+    font-family: 'Amiko', Helvetica, sans-serif;
 }
 
 a:hover {
