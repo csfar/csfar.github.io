@@ -68,6 +68,18 @@
     align-items: flex-start;
 }
 
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    border-width: 0px;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    padding-bottom: 100px;
+    align-items: flex-start;
+}
 
 .info-flavor {
     font-style: normal;
@@ -111,9 +123,27 @@ img:hover {
     
 }
 
+.footer {
+    font-style: normal;
+    font-size: 12pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 .project-title {
     font-style: normal;
     font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Amiko', Helvetica, sans-serif;
+
+    background: linear-gradient(to top, #E3E3E3 50%, white 50%);
+}
+
+.footer-title {
+    font-style: normal;
+    font-size: 16pt;
     font-weight: bold;
     font-family: 'Amiko', Helvetica, sans-serif;
 
@@ -146,6 +176,26 @@ a {
 }
 
 a:hover {
+    color:  black;
+    background-position: +100% 0;
+}
+
+.footer-row a {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+
+    transition: 0.1s linear;
+    background: linear-gradient(to left, white 50%,  black 50%);
+    background-size: 200%;
+    background-position: 0 0;
+
+    font-family: 'Amiko', Helvetica, sans-serif;
+}
+
+.footer-row a:hover {
     color:  black;
     background-position: +100% 0;
 }
