@@ -56,17 +56,6 @@
     grid-template-rows: 1fr;
 }
 
-/* .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 430px);
-    border-width: 0px;
-    border-top-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 20px;
-    align-items: flex-start;
-} */
-
 .row {
     display: grid;
     grid-template-columns: repeat(auto-fill, 370px);
@@ -78,6 +67,7 @@
     padding: 20px;
     align-items: flex-start;
 }
+
 
 .info-flavor {
     font-style: normal;
@@ -163,5 +153,9 @@ a:hover {
 @media(max-width: 600px) {
     .wrapper {
         padding: 0px 5% 0px 0px;
+    }
+
+    img {
+        filter: grayscale(0);
     }
 }
