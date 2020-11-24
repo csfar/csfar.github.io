@@ -26,6 +26,11 @@
     padding-bottom: 30px;
 }
 
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .header h1 {
     font-size: 28pt;
 }
@@ -38,6 +43,7 @@
     color: white;
     padding: 10px;
     margin: 5px;
+    width: max-content;
 
     transition: 0.1s linear;
     background: linear-gradient(to left, white 50%,  black 50%);
@@ -207,5 +213,15 @@ a:hover {
 
     img {
         filter: grayscale(0);
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .inner-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
