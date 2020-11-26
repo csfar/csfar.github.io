@@ -42,7 +42,6 @@
     font-family: 'Amiko', Helvetica, sans-serif;
     color: white;
     padding: 10px;
-    margin: 5px;
     width: max-content;
 
     transition: 0.1s linear;
@@ -125,7 +124,7 @@ img:hover {
     font-style: normal;
     font-size: 14pt;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 22px;
     
 }
 
